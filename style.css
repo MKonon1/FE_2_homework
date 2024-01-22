@@ -6,10 +6,23 @@
 
 a {
   text-decoration: none;
+  color: var(--text-color);
+}
+a:hover {
+  color: #2196f3;
+}
+#t1 {
+  left: 0%;
+}
+#t2 {
+  left: 33%;
+}
+#t3 {
+  right: 0%;
 }
 /*---------------------root------------------------------*/
 :root {
-  --color: #212121;
+  --text-color: #212121;
   --namecolor: #757575;
   --savecolor: #ffffff;
   --bridgecolor: #2196f3;
@@ -21,56 +34,136 @@ a {
   --font-family: "Roboto", sans-serif;
 }
 
-/* ---------------root(закінчення)-----------------------*/
-
 /*----------------- Навігаційний список -----------------*/
 .nav {
   display: block;
-  background-color: var(--color);
+  /* background-color: var(--color); */
+  width: 1600px;
   height: 80px;
+  position: relative;
+  margin: 0 auto;
 }
+
+.webstudio {
+  color: #2196f3;
+  font-family: "Raleway";
+  font-size: 26px;
+  position: absolute;
+  top: 24px;
+  left: 215px;
+  width: 145px;
+  height: 31px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+  /* margin: 0 auto; */
+}
+.studio {
+  color: #000;
+}
+
+.nav-menu-list {
+  display: block;
+  width: 285px;
+  height: 16px;
+  top: 0%;
+  /* display: block;
+  width: 285px;
+  height: 48px;
+  position: absolute;
+  top: 32px;
+  left: 33%; */
+}
+.nav-menu {
+  display: block;
+  width: 285px;
+  height: 48px;
+  position: absolute;
+  top: 32px;
+  left: 33%;
+}
+
 .nav-list-item {
   font-family: var(--font-family);
   font-weight: 900;
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: var(--color);
+  color: var(--text-color);
+  position: absolute;
 }
-/* Навігаційний список (закінчення) */
+
+.nav-list-item:hover > .list-item-underline {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: #2196f3;
+}
 
 /*------------------- Section hero ----------------------*/
 
 .hero {
-  background-color: var(--color);
+  display: block;
+  box-sizing: content-box;
+  width: 1600px;
+  height: 600px;
+
+  /* background-color: var(--text-color); */
   text-align: center;
   margin-top: 18px;
-  padding-top: 195px;
-  padding-bottom: 200px;
+  /* padding-top: 195px; */
+  /* padding-bottom: 200px; */
+  background-image: url(./assets/images/hero-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  position: relative;
 }
+.overlay {
+  display: block;
+  width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  position: absolute;
+  background: rgba(47, 48, 58, 0.4);
+}
+/* .hero-background {
+  position: absolute;
+} */
 .hero__heading {
+  position: absolute;
   width: 696px;
-  height: 150px;
-  font-family: "Roboto";
-  font-weight: 900;
+  height: 120px;
+  font-family: Roboto;
+  /* font-weight: 900; */
+  font-weight: bold;
   font-size: 44px;
   line-height: 60px;
+  font-style: normal;
   margin: 0 auto;
   text-align: center;
-  letter-spacing: 0.06em;
+  letter-spacing: 2.64px;
   text-transform: uppercase;
   color: var(--txt);
+  top: 40%;
+  left: 28%;
 }
 .hero__button {
   width: 216px;
   height: 50px;
 
   background-color: var(--bridgecolor);
-  box-shadow: 0px 4px 4px var(--h1color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
   outline: none;
   border: none;
+  position: relative;
+  margin: 0 auto;
+  /* left: 50%; */
+  top: 60%;
 }
 .hero__button--text {
   display: block;
@@ -90,45 +183,134 @@ a {
 
   color: var(--txt);
 }
-/*----------------- Section hero (end)-------------------*/
 
 /*----------------- Стилізація написів ------------------*/
+h1 {
+  /* display: block; */
+  /* font-weight: 900; */
+  font-weight: bold;
+}
 h2 {
-  font-size: 55px;
+  font-size: 36px;
   font-family: var(--font-family);
 }
 h3 {
   color: var(--color);
   font-family: var(--font-family);
+  text-wrap: nowrap;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.48px;
 }
 p {
   color: var(--namecolor);
   font-family: var(--font-family);
+  text-align: center;
 }
 ul,
 ol {
   list-style: none;
   font-family: var(--font-family);
 }
-/*----------- Стилізація написів (закінчення) -----------*/
 
 /*----------------------- Команда -----------------------*/
-.team--title {
-  text-align: center;
-}
-.team--img {
-  text-align: center;
-}
-.class2 {
+.our-team {
+  display: block;
+  position: relative;
   background-color: var(--backgroundcolorsectionf);
+  height: 708px;
+  width: 1600px;
+  margin: 0 auto;
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
-/*--------------- Команда (закінчення) ------------------*/
 
+.team--title {
+  display: block;
+  text-align: center;
+  position: absolute;
+  top: 94px;
+  left: 668px;
+  /* margin: 0 auto; */
+}
+.team {
+  /* text-align: center; */
+  display: block;
+  position: relative;
+  /* top: 50px; */
+  width: 1170px;
+  height: 428px;
+  margin: 0 auto;
+  top: 186px;
+}
+.team-info {
+  display: block;
+  height: 330px;
+}
+.team-card-1 {
+  display: inline-block;
+  position: relative;
+  height: 428px;
+  left: 0%;
+  background-color: #fff;
+}
+.team-card-2 {
+  display: inline-block;
+  position: absolute;
+  height: 428px;
+  left: 25.5%;
+  background-color: #fff;
+}
+.team-card-3 {
+  display: inline-block;
+  position: absolute;
+  height: 428px;
+  left: 51.5%;
+  background-color: #fff;
+}
+.team-card-4 {
+  display: inline-block;
+  position: absolute;
+  height: 428px;
+  right: 0%;
+  background-color: #fff;
+}
+.team-card-1 > p {
+  margin-top: 10px;
+}
+.team-card-2 > p {
+  margin-top: 10px;
+}
+.team-card-3 > p {
+  margin-top: 10px;
+}
+.team-card-4 > p {
+  margin-top: 10px;
+}
+.team-names {
+  position: relative;
+  margin-top: 28px;
+}
+.img {
+  /* position: relative; */
+  width: 270px;
+  height: 260px;
+}
+#icon-instagram {
+  width: 50px;
+  height: 50px;
+  fill: chartreuse;
+  background-color: crimson;
+}
 /*--------------- Форма для заповнення ------------------*/
 .form {
   display: block;
   height: 55px;
-  background-color: var(--color);
+  background-color: var(--text-color);
   margin-top: 15px;
 }
 .form--title {
@@ -141,18 +323,19 @@ form {
   padding: 15px;
   padding-top: 2px;
 }
-/*--------- Форма для заповнення (закінчення) -----------*/
 
 /*------------------ Підвал сайту -----------------------*/
 .footer {
   /* position: absolute; */
-  width: 100%;
+  position: relative;
+  width: 1600px;
   height: 252px;
+  margin: 0 auto;
   /* top: 2094px; */
-  background-color: var(--color);
+  background-color: var(--text-color);
 }
 .footer--title {
-  display: flexbox;
+  display: flex;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
@@ -170,6 +353,12 @@ address {
   font-size: 25px;
   margin-top: 10px;
 }
-/*----------- Підвал сайту (закінчення) -----------------*/
 
-/* додати flex container та flex item */
+/* .icon-clock {
+  display: block;
+  width: 50px;
+  height: 50px;
+  top: 33%;
+  left: 0%;
+  position: absolute;
+} */

@@ -9,103 +9,126 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./assets/images/symbol-defs.svg" />
   </head>
   <body>
     <!-- <img src="./assets/images/symbol-defs.svg" alt="" /> -->
 
-    <svg><use href="./astronaut.svg"></use></svg>
-
     <!-- Навігація -->
-    <header class="header">
-      <!-- Тайтл WebStudio-->
-      <a class="page--title" style="color: #212121" href=""
-        ><span style="color: #2196f3">Web</span>Studio</a
-      >
-      <nav class="nav">
-        <ul class="nav--text">
-          <li class="nav-list-item"><a href="#q">Контакти</a></li>
-          <li class="nav-list-item"><a href="#q">Студія</a></li>
-          <li class="nav-list-item"><a href="#q">КомандаА</a></li>
-          <li class="nav-list-item"><a href="#q">Портфоліо</a></li>
+    <!-- Тайтл WebStudio-->
+
+    <nav class="nav">
+      <h3 class="webstudio">Web<span class="studio">Studio</span></h3>
+      <div class="nav-menu">
+        <ul class="nav-menu-list">
+          <li class="nav-list-item" id="t1"><a href="#q">Студія</a></li>
+          <li class="nav-list-item" id="t2"><a href="#q">Портфоліо</a></li>
+          <li class="nav-list-item" id="t3"><a href="#q">Контакти</a></li>
         </ul>
-      </nav>
-    </header>
+        <div class="list-item-underline"></div>
+      </div>
+    </nav>
     <!-- Навігація (закінчення) -->
 
     <!-- Головна частина сторінки -->
     <main>
       <!-- Section hero -->
       <section class="hero">
+        <!-- <img class="hero-background" src="./assets/images/hero-background.png" alt=""> -->
         <!-- Основний заголовок сторінки (тільки один на сторінці) -->
+        <div class="overlay"></div>
         <h1 class="hero__heading">Ефективні рішення для вашого бізнесу</h1>
         <!-- Створення кнопки -->
         <button class="hero__button button">
-          <span class="hero__button--text">Замовити послугу</span>
+          <p class="hero__button--text">Замовити послугу</p>
         </button>
       </section>
       <!-- Section hero (закінчення)-->
 
       <!-- Секція "Наша Команда" -->
-      <section class="team">
+      <section class="our-team">
         <h2 class="team--title" style="color: black">Наша команда</h2>
-        <ul class="team--img">
-          <li class="class2">
-            <img src="./assets/images/img.jpg" alt="" class="img" />
-            <h3 class="h3">Михайло Єрмаков</h3>
-            <p class="p">UI designer</p>
-          </li>
-          <li class="class2">
-            <img src="./assets/images/img.jpg" alt="" class="img" />
-            <h3 class="h3">Михайло Єрмаков</h3>
-            <p class="p">UI designer</p>
-          </li>
-          <li class="class2">
-            <img src="./assets/images/img.jpg" alt="" class="img" />
-            <h3 class="h3">Михайло Єрмаков</h3>
-            <p class="p">UI designer</p>
-          </li>
-          <li class="class2">
-            <img src="./assets/images/img.jpg" alt="" class="img" />
-            <h3 class="h3">Михайло Єрмаков</h3>
-            <p class="p">UI designer</p>
-          </li>
-        </ul>
+        <div class="team">
+          <ul class="team-card-1">
+            <li class="team-info">
+              <img src="./assets/images/igor-demyanenko.jpg" alt="" class="img" />
+              <h3 class="team-names">Ігор Дем'яненко</h3>
+              <p class="p">Product Designer</p>
+            </li>
+            <li class="social-links"></li>
+          </ul>
+          <ul class="team-card-2">
+            <li class="team-info">
+              <img src="./assets/images/olga-riepina.jpg" alt="" class="img" />
+              <h3 class="team-names">Ольга Рєпіна</h3>
+              <p class="p">Frontend Developer</p>
+            </li>
+            <li class="social-links"></li>
+          </ul>
+          <ul class="team-card-3">
+            <li class="team-info">
+              <img src="./assets/images/mykola-tarasov.jpg" alt="" class="img" />
+              <h3 class="team-names">Микола Тарасов</h3>
+              <p class="p">Marketing</p>
+            </li>
+            <li class="social-links">
+              <!-- <svg id="icon-instagram">
+                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+              </svg> -->
+            </li>
+          </ul>
+          <ul class="team-card-4">
+            <li class="team-info">
+              <img src="./assets/images/mykhailo-yermakov.jpg" alt="" class="img" />
+              <h3 class="team-names">Михайло Єрмаков</h3>
+              <p class="p">UI designer</p>
+            </li>
+            <li class="social-links"></li>
+          </ul>
+        </div>
       </section>
       <!-- Секція "Наша Команда" (закінчення) -->
 
       <!-- Форма -->
-      <section class="form">
-        <h3 class="form--title">Приєднуйтесь:</h3>
-        <form action="">
-          <input type="text" placeholder="Емейл" />
-          <input type="password" placeholder="Пароль" />
-          <button type="submit">Login</button>
-          <button type="reset">Оновити форму</button>
-        </form>
-      </section>
+
       <!-- Форма (закінчення)-->
     </main>
     <!-- Головна частина сторінки (кінець)-->
 
     <!-- Підвал сайту -->
     <footer class="footer">
-      <a class="footer--title" href="/index.html" style="color: #2196f3" href=""
+      <section class="form">
+        <h3 class="form--title">Приєднуйтесь:</h3>
+        <form action="./index.html">
+          <input type="text" placeholder="Емейл" />
+          <input type="password" placeholder="Пароль" />
+          <button type="submit">Login</button>
+          <button type="reset">Оновити форму</button>
+        </form>
+      </section>
+
+      <a class="footer--title" href="/index.html" style="color: #2196f3"
         ><span style="color: white">Web</span>Studio</a
       >
       <ul class="footer--text">
-        <li id="g">
+        <li id="g1">
           <a style="color: rgb(46, 129, 224)" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
-        <li id="g">
+        <li id="g2">
           <a style="color: rgb(46, 129, 224)" href="tel:380961111111"
             >+38 096 111 11 11</a
           >
         </li>
-        <address style="color: white">м. Київ, пр-т Лесі Українки, 26</address>
+        <li>
+          <address style="color: white">м. Київ, пр-т Лесі Українки, 26</address>
+        </li>
       </ul>
     </footer>
     <!-- Підвал сайту (закінчення)-->
   </body>
+  <!-- <svg class="icon-clock">
+    <use href="./assets/images/symbol-defs.svg#icon-clock"></use>
+  </svg> -->
 </html>
