@@ -4,23 +4,6 @@
   box-sizing: border-box;
 }
 
-/* a {
-  text-decoration: none;
-  color: var(--text-color);
-}
-a:hover {
-  color: #2196f3;
-} */
-#t1 {
-  left: 0%;
-}
-#t2 {
-  left: 33%;
-}
-#t3 {
-  right: 0%;
-}
-/*---------------------root------------------------------*/
 :root {
   --text-color: #212121;
   --namecolor: #757575;
@@ -34,10 +17,28 @@ a:hover {
   --font-family: "Roboto", sans-serif;
 }
 
-/*----------------- Навігаційний список -----------------*/
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+a:hover {
+  color: #2196f3;
+}
+
+#t1 {
+  left: 0%;
+}
+
+#t2 {
+  left: 33%;
+}
+
+#t3 {
+  right: 0%;
+}
+
 .nav {
   display: block;
-  /* background-color: var(--color); */
   width: 1600px;
   height: 80px;
   position: relative;
@@ -57,8 +58,8 @@ a:hover {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
-  /* margin: 0 auto; */
 }
+
 .studio {
   color: #000;
 }
@@ -68,13 +69,8 @@ a:hover {
   width: 285px;
   height: 16px;
   top: 0%;
-  /* display: block;
-  width: 285px;
-  height: 48px;
-  position: absolute;
-  top: 32px;
-  left: 33%; */
 }
+
 .nav-menu {
   display: block;
   width: 285px;
@@ -102,25 +98,20 @@ a:hover {
   background: #2196f3;
 }
 
-/*------------------- Section hero ----------------------*/
-
 .hero {
   display: block;
   box-sizing: content-box;
   width: 1600px;
   height: 600px;
-
-  /* background-color: var(--text-color); */
   text-align: center;
   margin-top: 18px;
-  /* padding-top: 195px; */
-  /* padding-bottom: 200px; */
   background-image: url(./assets/images/hero-background.png);
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
   position: relative;
 }
+
 .overlay {
   display: block;
   width: 1600px;
@@ -129,15 +120,12 @@ a:hover {
   position: absolute;
   background: rgba(47, 48, 58, 0.4);
 }
-/* .hero-background {
-  position: absolute;
-} */
+
 .hero__heading {
   position: absolute;
   width: 696px;
   height: 120px;
   font-family: Roboto;
-  /* font-weight: 900; */
   font-weight: bold;
   font-size: 44px;
   line-height: 60px;
@@ -150,50 +138,42 @@ a:hover {
   top: 40%;
   left: 28%;
 }
+
 .hero__button {
   width: 216px;
   height: 50px;
-
   background-color: var(--bridgecolor);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-
   outline: none;
   border: none;
   position: relative;
   margin: 0 auto;
-  /* left: 50%; */
   top: 60%;
 }
+
 .hero__button--text {
   display: block;
-
   width: 152px;
-  /* height: 30px; */
-
   margin: 0 auto;
-
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-
   letter-spacing: 0.06em;
-
   color: var(--txt);
 }
 
-/*----------------- Стилізація написів ------------------*/
 h1 {
-  /* display: block; */
-  /* font-weight: 900; */
   font-weight: bold;
 }
+
 h2 {
   font-size: 36px;
   font-family: var(--font-family);
 }
+
 h3 {
   color: var(--color);
   font-family: var(--font-family);
@@ -206,18 +186,19 @@ h3 {
   line-height: normal;
   letter-spacing: 0.48px;
 }
+
 p {
   color: var(--namecolor);
   font-family: var(--font-family);
   text-align: center;
 }
+
 ul,
 ol {
   list-style: none;
   font-family: var(--font-family);
 }
 
-/*----------------------- Команда -----------------------*/
 .our-team {
   display: block;
   position: relative;
@@ -235,22 +216,22 @@ ol {
   position: absolute;
   top: 94px;
   left: 668px;
-  /* margin: 0 auto; */
 }
+
 .team {
-  /* text-align: center; */
   display: block;
   position: relative;
-  /* top: 50px; */
   width: 1170px;
   height: 428px;
   margin: 0 auto;
   top: 186px;
 }
+
 .team-info {
   display: block;
   height: 330px;
 }
+
 .team-card-1 {
   display: inline-block;
   position: relative;
@@ -258,6 +239,7 @@ ol {
   left: 0%;
   background-color: #fff;
 }
+
 .team-card-2 {
   display: inline-block;
   position: absolute;
@@ -265,6 +247,7 @@ ol {
   left: 25.5%;
   background-color: #fff;
 }
+
 .team-card-3 {
   display: inline-block;
   position: absolute;
@@ -272,6 +255,7 @@ ol {
   left: 51.5%;
   background-color: #fff;
 }
+
 .team-card-4 {
   display: inline-block;
   position: absolute;
@@ -279,61 +263,67 @@ ol {
   right: 0%;
   background-color: #fff;
 }
+
 .team-card-1 > p {
   margin-top: 10px;
 }
+
 .team-card-2 > p {
   margin-top: 10px;
 }
+
 .team-card-3 > p {
   margin-top: 10px;
 }
+
 .team-card-4 > p {
   margin-top: 10px;
 }
+
 .team-names {
   position: relative;
   margin-top: 28px;
 }
+
 .img {
-  /* position: relative; */
   width: 270px;
   height: 260px;
 }
+
 #icon-instagram {
   width: 50px;
   height: 50px;
   fill: chartreuse;
   background-color: crimson;
 }
-/*--------------- Форма для заповнення ------------------*/
+
 .form {
   display: block;
   height: 55px;
   background-color: var(--text-color);
   margin-top: 15px;
 }
+
 .form--title {
   color: white;
   margin: 0 auto;
   margin-left: 25px;
 }
+
 form {
   margin-left: 35px;
   padding: 15px;
   padding-top: 2px;
 }
 
-/*------------------ Підвал сайту -----------------------*/
 .footer {
-  /* position: absolute; */
   position: relative;
   width: 1600px;
   height: 252px;
   margin: 0 auto;
-  /* top: 2094px; */
   background-color: var(--text-color);
 }
+
 .footer--title {
   display: flex;
   font-family: "Roboto";
@@ -344,21 +334,14 @@ form {
   letter-spacing: 0.06em;
   margin-left: 30px;
 }
+
 .footer--text {
   margin-left: 40px;
   padding: 0;
   font-size: 25px;
 }
+
 address {
   font-size: 25px;
   margin-top: 10px;
-}
-
-/* .icon-clock {
-  display: block;
-  width: 50px;
-  height: 50px;
-  top: 33%;
-  left: 0%;
-  position: absolute;
-} */
+}/*# sourceMappingURL=main.css.map */
